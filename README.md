@@ -3,6 +3,4 @@ This repository contains the scripts to compute forest burn area from UAS imager
 
 The orthomosaic rasters used to perform these analysis were uploaded to Duke Box due to github file size limitations. Fire Surveys (1 and 2): https://duke.app.box.com/folder/113625452147
 
-Method 1: Python script (ArcPy interface) developed to filter out high vegetation values from the DSM and mask the ortho accordingly 
-
-Method 2: Pick distinguishifiable points from 01 Pix4D point cloud (with mesh) and create 3D gcps for 02 Pix4D project (with XYZ input from 01). Reoptimize 02. This is to pull up both orthos to be on the same plane - so that we can subtract the DTMs / DSMs 
+This tool takes, as an input, an orthomosaic and Digital Surface Model (DSM). These products are derived from processing of Unoccupied Aircraft System (UAS) imagery in Structure-from-Motion softwares like Pix4D or Agisoft Metashape. This tool outputs 
