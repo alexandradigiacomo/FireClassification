@@ -1,8 +1,7 @@
 # FireClassification
-ESTCP project to understand forest burn area from UAS imagery.
+This repository contains the scripts to compute forest burn area from UAS imagery. This project is carried out as part of an effort by the Environmental Security Technology Certification Program (ESTCP) in the Marine Robotics and Remote Sensing Laboratory of Duke University. 
 
-Orthomosaic rasters uploaded to Duke Box due to github file size limitations. 
-Fire Surveys (1 and 2): https://duke.app.box.com/folder/113625452147
+The orthomosaic rasters used to perform these analysis were uploaded to Duke Box due to github file size limitations. Fire Surveys (1 and 2): https://duke.app.box.com/folder/113625452147
 
 Method 1: Python script (ArcPy interface) developed to filter out high vegetation values from the DSM and mask the ortho accordingly 
 
