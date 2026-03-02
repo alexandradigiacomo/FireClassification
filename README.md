@@ -1,4 +1,33 @@
 # FireClassification
-This repository contains the scripts to compute forest burn area from UAS imagery. This project is carried out as part of an effort by the Environmental Security Technology Certification Program (ESTCP) in the Marine Robotics and Remote Sensing Laboratory of Duke University. The 'FireClassification.py' script can be uploaded to ArcGIS to create a user-friendly tool. 
 
-This tool takes, as an input, an orthomosaic and a Digital Surface Model (DSM). These products are derived from processing of Unoccupied Aircraft System (UAS) imagery in Structure-from-Motion softwares like Pix4D or Agisoft Metashape. Additionally, this tool takes, as an input, manually identified ground points. The GUI prompts the user to identify 10-30 ground points using the orthomosaic. As a result, this tool outputs a binary classification raster distinguishing burned area from non-burned area by (1) filtering out low-lying vegetation in the DSM using the elevations of manually-identified ground points and (2) masking out low vegetation in the corresponding orthomosaic and computing relationships between optical indices.
+## Overview
+
+This repository contains scripts developed to estimate forest burn area from Unoccupied Aircraft System (UAS) imagery. The project is conducted as part of the Environmental Security Technology Certification Program (ESTCP) within the Marine Robotics and Remote Sensing Laboratory at Duke University.
+
+The primary script, `FireClassification.py`, can be integrated into ArcGIS to create a user-friendly geoprocessing tool.
+
+## Inputs
+
+The tool requires the following inputs:
+
+- **Orthomosaic** derived from UAS imagery  
+- **Digital Surface Model (DSM)** generated from UAS imagery  
+- **Manually identified ground points**  
+
+The orthomosaic and DSM are produced through Structure-from-Motion (SfM) processing workflows using software such as Pix4D or Agisoft Metashape.
+
+## Workflow
+
+The ArcGIS graphical user interface (GUI) guides the user through the following steps:
+
+1. Identification of 10–30 ground points using the orthomosaic.
+2. Filtering of low-lying vegetation in the DSM using elevations derived from manually identified ground points.
+3. Masking of low vegetation in the corresponding orthomosaic.
+4. Computation of relationships between optical indices to distinguish burned from non-burned areas.
+
+## Output
+
+The tool produces a **binary classification raster** that delineates:
+
+- Burned areas  
+- Non-burned areas  
